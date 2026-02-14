@@ -5,7 +5,7 @@ import org.hibernate.Session;
 import Entity.Product;
 
 public class UpdateProduct {
-	public void updateProduct(Session session, long id, double newPrice) {
+	public void updateProduct(Session session,  id, double newPrice) {
 		RetriveFromDatabase retrive = new RetriveFromDatabase();
 		Product product = retrive.retriveProduct(session, id);
 		product.setPrice(newPrice);
@@ -14,3 +14,4 @@ public class UpdateProduct {
 	}
 
 }
+
