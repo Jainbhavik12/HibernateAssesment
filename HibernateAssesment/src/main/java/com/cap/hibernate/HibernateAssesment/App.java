@@ -37,15 +37,15 @@ public class App
         
         //retriving
 //        RetriveFromDatabase retrive = new RetriveFromDatabase();
-//        Product product = retrive.retriveProduct(session, 0L);
+//        Product product = retrive.retriveProduct(session, 0);
 //        
 //        //updating
 //        UpdateProduct update = new UpdateProduct();
-//        update.updateProduct(session, 1L, 27000.0);
+//        update.updateProduct(session, 1, 27000.0);
         
         //Deleting
 //        DeleteProduct delete = new DeleteProduct();
-//        delete.deleteProduct(session, 2L);
+//        delete.deleteProduct(session, 2);
         txn.commit();
         session.close();
         factory.close();
@@ -53,3 +53,4 @@ public class App
         
     }
 }
+
